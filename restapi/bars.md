@@ -1,6 +1,10 @@
 ## Bars
 
-Realtime latest last sale eligible transactions, according to condition rules, aggregated to bars over a time window for a given symbol (up to 5 days of history).
+Data availability: 4am-8pm
+
+According to condition rules, aggregated to bars over a time window for a given symbol (up to 5 days of history).
+
+Realtime latest last sale eligible transactions within market hours. 
 
 ##### Endpoint
 
@@ -44,10 +48,10 @@ none
 | Field | Name | Type | Description |
 |-------|------|------|-------------|
 |Date + Timestamp|timestamp|string|Format: YYYY-MM-DDThh:mm:ss.s|
-| Open| open| number | The open and close prices are those for the beginning and end of the one-minute period, not the trading session.|
+| Open| open| number | The open price is for the beginning of the one-minute period, not the trading session.|
 | High| high| number | The high price during the candlestick period is indicated by the top of the shadow or tail above the body. If the open or close was the highest price, then there will be no upper shadow.|
 | Low| low| number | The low is indicated by the bottom of the shadow or tail below the body. If the open or close was the lowest price, then there will be no lower shadow.|
-| Close| close| number | Last trade of that precision. The open and close prices are those for the beginning and end of the one-minute period, not the trading session.|
+| Close| close| number | Last trade of that precision. The close price is for the end of the one-minute period, not the trading session.|
 | Size| size| number | Aggregated shares in that precision. The size of the trades in the time segment selected.|
 
 
