@@ -1,4 +1,4 @@
-## Bars (Nasdaq Markets)
+## Bars (BX and PSX)
 
 Bars are calculated from 4:00 am to 8:00 pm ET for a given symbol(up to 5 days of history). Eligibility rules are applied only during market hours(Excluded pre-market and post-market).
 
@@ -8,7 +8,7 @@ Bars are calculated from 4:00 am to 8:00 pm ET for a given symbol(up to 5 days o
 
 #### URI Parameters
 
-`<source>` - Data source; acceptable values: `Nasdaq`, `BX`, `PSX`
+`<source>` - Data source; acceptable values: `BX`, `PSX`
 
 `<offset>` - Real-time or 15 minute delayed data; acceptable values: `realtime`, `delayed`
 
@@ -59,7 +59,7 @@ none
 #### Request
 
 ```
-curl --location --request GET 'https://example.com/v1/nasdaq/realtime/equities/bars/ZVZZT/1minute/2021-10-29T09:30/2021-20-29T10:00' \
+curl --location --request GET 'https://example.com/v1/bx/realtime/equities/bars/ZVZZT/1minute/2021-10-29T09:30/2021-20-29T10:00' \
 --header "Authorization: Bearer example_token"
 ```
 
